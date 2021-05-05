@@ -1,4 +1,7 @@
 """Paint, for drawing shapes.
+# Equipo 8
+# Iván Gutiérrez 
+# Abraham Mora 
 
 Exercises
 
@@ -6,7 +9,6 @@ Exercises
 2. Complete circle.
 3. Complete rectangle.
 4. Complete triangle.
-5. Add width parameter.
 
 """
 
@@ -33,7 +35,7 @@ def square(start, end):
 
     end_fill()
 
-def circle(start, end):
+def circle(start, end):  #PUNTO 2: COMPLETAR CÍRCULO
     "Draw circle from start to end."
     up()
     goto(start.x, start.y)
@@ -45,7 +47,7 @@ def circle(start, end):
     end_fill()
     # TODO
 
-def rectangle(start, end):
+def rectangle(start, end): # PUNTO 3: COMPLETAR RECTÁNGULO
     "Draw rectangle from start to end."
     up()
     goto(start.x, start.y)
@@ -60,10 +62,8 @@ def rectangle(start, end):
 
     end_fill()
 
-    # TODO
 
-
-def triangle(start, end):
+def triangle(start, end): # PUNTO 4: COMPLETAR TRIÁNGULO
     "Draw triangle from start to end."
     up()
     goto(start.x, start.y)
@@ -75,7 +75,6 @@ def triangle(start, end):
         left(120)
 
     end_fill()
-    # TODO
 
     
 def tap(x, y):
@@ -113,7 +112,7 @@ onkey(lambda: color('white'), 'W')
 onkey(lambda: color('green'), 'G')
 onkey(lambda: color('blue'), 'B')
 onkey(lambda: color('red'), 'R')
-onkey(lambda: color('purple'), 'P')
+onkey(lambda: color('purple'), 'P') # PUNTO 1: NUEVO COLOR
 onkey(lambda: store('shape', line), 'l')
 onkey(lambda: store('shape', square), 's')
 onkey(lambda: store('shape', circle), 'c')
