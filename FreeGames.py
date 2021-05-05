@@ -47,7 +47,21 @@ def circle(start, end):
 
 def rectangle(start, end):
     "Draw rectangle from start to end."
-    pass  # TODO
+    up()
+    goto(start.x, start.y)
+    down()
+    begin_fill()
+
+    for count in range(2): # una vuelta hace la mitad de un rectángulo; como una L
+        forward(100) # base del rectángulo
+        left(90) # giro de ángulo: 90°
+        forward(50) # altura: avanza la mitad de su largo
+        left(90) # giro de ángulo: 90°
+
+    end_fill()
+
+    # TODO
+
 
 def triangle(start, end):
     "Draw triangle from start to end."
