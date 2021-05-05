@@ -79,7 +79,6 @@ def tap(x, y):
         #el contenido de shape indica la función que se ejecutara
         shape(start, end)
         
-        
     #reiniciar start con None - para indicar que lo siguiente es nuevo
         state['start'] = None
 
